@@ -12,78 +12,78 @@ function ResgatarValorUSD() {
   }
   
   function ConverterEmBTC() {
-    var valorConvertidoEmBTC = valorEmUSDNumerico * 0.000021;
-    var elementoValorConvertidoEmBTC = document.getElementById(
-      "valorConvertidoEmBTC"
+    var moedaConvertidaEmBTC = valorEmUSDNumerico * 0.000021;
+    var elementoMoedaConvertidaEmBTC = document.getElementById(
+      "moedaConvertidaEmBTC"
     );
-    var valorConvertidoEmBTCFixado = valorConvertidoEmBTC.toFixed(7);
-    var valorConvertidoEmBTC =
-      "O resultado em BTC é " + valorConvertidoEmBTCFixado;
-    return (elementoValorConvertidoEmBTC.innerHTML = valorConvertidoEmBTC);
+    var moedaConvertidaEmBTCFixado = moedaConvertidaEmBTC.toFixed(7);
+    var moedaConvertidaEmBTC =
+      "O resultado em BTC é " + moedaConvertidaEmBTCFixado;
+    return (elementoMoedaConvertidaEmBTC.innerHTML = moedaConvertidaEmBTC);
   }
   
   function ConverterEmBRL() {
     if (!ResgatarValorUSD()) return;
-    var valorConvertidoEmBRL = valorEmUSDNumerico * 5;
-    var elementoValorConvertidoEmBRL = document.getElementById(
-      "valorConvertidoEmBRL"
+    var moedaConvertida = valorEmUSDNumerico * 5;
+    var elementoMoedaConvertida = document.getElementById(
+      "moedaConvertida"
     );
-    var valorConvertidoEmBRLFixado = valorConvertidoEmBRL.toFixed(2);
-    var valorConvertidoEmBRL =
-      "O resultado em BRL é " + valorConvertidoEmBRLFixado;
-    elementoValorConvertidoEmBRL.innerHTML = valorConvertidoEmBRL;
+    var moedaConvertidaFixado = moedaConvertida.toFixed(2);
+    var moedaConvertida =
+      "O resultado em BRL é " + moedaConvertidaFixado;
+    elementoMoedaConvertida.innerHTML = moedaConvertida;
   
     ConverterEmBTC();
   }
-  
+
   function ConverterEmJPY() {
     if (!ResgatarValorUSD()) return;
-    var valorConvertidoEmJPY = valorEmUSDNumerico * 109.14;
-    var elementoValorConvertidoEmJPY = document.getElementById(
-      "valorConvertidoEmJPY"
+    var moedaConvertida = valorEmUSDNumerico * 109.14;
+    var elementoMoedaConvertida = document.getElementById(
+      "moedaConvertida"
     );
-    var valorConvertidoEmJPYFixado = valorConvertidoEmJPY.toFixed(2);
-    var valorConvertidoEmJPY =
-      "O resultado em JPY é " + valorConvertidoEmJPYFixado;
-    elementoValorConvertidoEmJPY.innerHTML = valorConvertidoEmJPY;
+    var moedaConvertidaFixado = moedaConvertida.toFixed(2);
+    var moedaConvertida =
+      "O resultado em JPY é " + moedaConvertidaFixado;
+    elementoMoedaConvertida.innerHTML = moedaConvertida;
   
     ConverterEmBTC();
   }
   
   function ConverterEmGBP() {
     if (!ResgatarValorUSD()) return;
-    var valorConvertidoEmGBP = valorEmUSDNumerico * 0.72;
-    var elementoValorConvertidoEmGBP = document.getElementById(
-      "valorConvertidoEmGBP"
+    var moedaConvertida = valorEmUSDNumerico * 0.72;
+    var elementoMoedaConvertida = document.getElementById(
+      "moedaConvertida"
     );
-    var valorConvertidoEmGBPFixado = valorConvertidoEmGBP.toFixed(2);
-    var valorConvertidoEmGBP =
-      "O resultado em GBP é " + valorConvertidoEmGBPFixado;
-    elementoValorConvertidoEmGBP.innerHTML = valorConvertidoEmGBP;
+    var moedaConvertidaFixado = moedaConvertida.toFixed(2);
+    var moedaConvertida =
+      "O resultado em GBP é " + moedaConvertidaFixado;
+    elementoMoedaConvertida.innerHTML = moedaConvertida;
   
     ConverterEmBTC();
   }
 
   function ConverterEmF() {
     var elementoTemperatura = document.getElementById("temperaturaEmCelcius");
-    var elementoValorConvertidoEmF = document.getElementById("valorConvertidoEmF");
+    var elementoValorConvertidoEmF = document.getElementById("temperaturaConvertida");
     var elementoTemperaturaValor = parseFloat(elementoTemperatura.value);
-    var valorConvertidoEmF = "O resultado em Fahrenheit é: " + ((elementoTemperaturaValor - 32) / 1.8).toFixed(2) + " ºF";
-    elementoValorConvertidoEmF.innerHTML = valorConvertidoEmF;
+    var temperaturaConvertida = "O resultado em Fahrenheit é: " + ((elementoTemperaturaValor - 32) / 1.8).toFixed(2) + " ºF";
+    elementoValorConvertidoEmF.innerHTML = temperaturaConvertida;
 }
 
 function ConverterEmK() {
   var elementoTemperatura = document.getElementById("temperaturaEmCelcius");
-  var elementoValorConvertidoEmK = document.getElementById("valorConvertidoEmK");
+  var elementoValorConvertidoEmK = document.getElementById("temperaturaConvertida");
   var elementoTemperaturaValor = parseFloat(elementoTemperatura.value);
-  var valorConvertidoEmK = "O resultado em Kelvin é: " + (elementoTemperaturaValor + 273).toFixed(2) + " K";
-  elementoValorConvertidoEmK.innerHTML = valorConvertidoEmK;
+  var temperaturaConvertida = "O resultado em Kelvin é: " + (elementoTemperaturaValor + 273).toFixed(2) + " K";
+  elementoValorConvertidoEmK.innerHTML = temperaturaConvertida;
 }
 
 function ConverterEmAnosLuz() {
   var elementoDistancia = document.getElementById("inputKilometros");
   var elementoValorConvertidoEmLy = document.getElementById("valorConvertidoEmLy");
   var elementoDistanciaValor = parseFloat(elementoDistancia.value);
-  var valorConvertidoEmLy = "O resultado em Anos Luz é: " + (elementoDistanciaValor / 9500000000).toFixed(2) + " ly";
+  var valorConvertidoEmLy = "O resultado em Anos Luz é: " + (elementoDistanciaValor / 9500000000).toFixed(8) + " ly";
   elementoValorConvertidoEmLy.innerHTML = valorConvertidoEmLy;
 }
