@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  <div class="container">
+    <h1 class="page-title">
+      Conversor de moedas
+    </h1>
+</head>
+
+<body>
+  <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
+  <label for="moeda">Insira o valor em dólar (USD):</label><br>
+  <input type="number" id="valorEmUSD" size="2" /><br>
+  <button type="submit" onclick="ConverterEmBRL()">Converter em Reais (BRL)</button>
+  <button type="submit" onclick="ConverterEmJPY()">Converter em Ien (JPY)</button>
+  <button type="submit" onclick="ConverterEmGBP()">Converter em Libras (GBP)</button>
+  <h2 id="valorConvertidoEmBRL"></h2>
+  <h2 id="valorConvertidoEmJPY"></h2>
+  <h2 id="valorConvertidoEmGBP"></h2>
+  <h2 id="valorConvertidoEmBTC"></h2>
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    <script src="script.js"></script>
+</body>
+
+</html>
