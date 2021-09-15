@@ -63,4 +63,27 @@ function ResgatarValorUSD() {
   
     ConverterEmBTC();
   }
-  
+
+  function ConverterEmF() {
+    var elementoTemperatura = document.getElementById("temperaturaEmCelcius");
+    var elementoValorConvertidoEmF = document.getElementById("valorConvertidoEmF");
+    var elementoTemperaturaValor = parseFloat(elementoTemperatura.value);
+    var valorConvertidoEmF = "O resultado em Fahrenheit é: " + ((elementoTemperaturaValor - 32) / 1.8).toFixed(2) + " ºF";
+    elementoValorConvertidoEmF.innerHTML = valorConvertidoEmF;
+}
+
+function ConverterEmK() {
+  var elementoTemperatura = document.getElementById("temperaturaEmCelcius");
+  var elementoValorConvertidoEmK = document.getElementById("valorConvertidoEmK");
+  var elementoTemperaturaValor = parseFloat(elementoTemperatura.value);
+  var valorConvertidoEmK = "O resultado em Kelvin é: " + (elementoTemperaturaValor + 273).toFixed(2) + " K";
+  elementoValorConvertidoEmK.innerHTML = valorConvertidoEmK;
+}
+
+function ConverterEmAnosLuz() {
+  var elementoDistancia = document.getElementById("inputKilometros");
+  var elementoValorConvertidoEmLy = document.getElementById("valorConvertidoEmLy");
+  var elementoDistanciaValor = parseFloat(elementoDistancia.value);
+  var valorConvertidoEmLy = "O resultado em Anos Luz é: " + (elementoDistanciaValor / 9500000000).toFixed(2) + " ly";
+  elementoValorConvertidoEmLy.innerHTML = valorConvertidoEmLy;
+}
